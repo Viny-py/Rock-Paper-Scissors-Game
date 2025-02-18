@@ -5,6 +5,11 @@ document.getElementById('wins').innerHTML = wins
 document.getElementById('draws').innerHTML = draws
 document.getElementById('losses').innerHTML = loss
 
+function resetScore(){
+  document.getElementById('wins').innerHTML = 0
+  document.getElementById('draws').innerHTML = 0
+  document.getElementById('losses').innerHTML = 0
+}
 
 function game(choice) {
   let compChoice = Math.floor(Math.random() * 3)

@@ -32,6 +32,14 @@
         border-color: transparent;
         font-size: 50px;
       }
+
+      .reset-score-button{
+        background-color: white;
+        color: black;
+        border-color: black;
+        height: 50px;
+        font-size: 40px;
+      }
     </style>
 </head>
 
@@ -63,7 +71,7 @@
       </button>
     </p>
 
-    <p style="text-align: center; padding-top: 100px;">
+    <p style="text-align: center; padding-top: 70px;">
       
       <a style="padding: 25px;">
       <button class="score">Wins:</button> 
@@ -80,6 +88,10 @@
       <button class="score" id="losses"></button>
       </a>
   
+    </p>
+
+    <p style="text-align: right;">
+      <button class="reset-score-button" onclick="resetScore()">Reset Score</button>
     </p>
   <script src="index.js"></script>
 </body>
