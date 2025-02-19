@@ -1,14 +1,18 @@
-let loss= 0
-let wins = 0
-let draws= 0
-document.getElementById('wins').innerHTML = wins
-document.getElementById('draws').innerHTML = draws
-document.getElementById('losses').innerHTML = loss
+document.getElementById('wins').innerHTML = JSON.parse(localStorage.getItem('userWins'))
+document.getElementById('draws').innerHTML = JSON.parse(localStorage.getItem('userDraws'))
+document.getElementById('losses').innerHTML = JSON.parse(localStorage.getItem('userLosses'))
+
+function saveScore(){
+  localStorage.setItem('userWins', JSON.stringify(document.getElementById('wins').innerHTML))
+  localStorage.setItem('userDraws', JSON.stringify(document.getElementById('draws').innerHTML))
+  localStorage.setItem('userLosses', JSON.stringify(document.getElementById('losses').innerHTML))
+}
 
 function resetScore(){
   document.getElementById('wins').innerHTML = 0
   document.getElementById('draws').innerHTML = 0
   document.getElementById('losses').innerHTML = 0
+  saveScore()
 }
 
 function game(choice) {
@@ -57,4 +61,5 @@ function game(choice) {
         break;
     }
   }
+  saveScore()
 }
