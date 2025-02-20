@@ -1,34 +1,49 @@
 .title {
   text-align: center;
   color: white;
-  padding-bottom: 60px;
-  padding-top: 20px;
+  margin: 2%;
+  padding-bottom: 3%;
 }
 
 .game {
   text-align: center;
-  border-radius: 25px;
+  margin: 2%;
 }
 
 .game-button{
   background-color: transparent;
   border-radius: 50%;
-  padding: 50px;
+  padding: 3%;
   border-color: white;
+}
+
+.game-image {
+  height: 175px;
+  width: 175px;
+}
+
+.score-table{
+  margin: .5%;
+  margin-bottom: .25%;
+  border: 1px solid white;
+  width: 20%;
+  text-align: center;
 }
 
 .score{
   background-color: transparent;
-  color: white;
-  border-radius: 10;
   border-color: transparent;
-  font-size: 50px;
+  color: white;
+  font-size: 35px;
 }
 
 .reset-score-button{
+  margin: .5%;
+  margin-top: 0;
   background-color: white;
+  border: 1px solid rgb(255, 255, 255);
   color: black;
-  border-color: black;
-  height: 50px;
   font-size: 40px;
+  height: 50px;
+  width: 20%;
 }

@@ -11,52 +11,37 @@
 
   <h1 class="title">Rock - Paper - Scissors</h1>
 
-    <p class="game">
-      <button class="game-button" onclick="game('rock')">
-        <img 
-        src="https://www.pngmart.com/files/23/Cartoon-Rock-PNG.png" 
-        height="200"
-        width="200"
-        >
-      </button>
-      <button class="game-button" onclick="game('paper')">
-        <img
-        src="https://lh5.googleusercontent.com/proxy/kdGS06laDHTebUDdHyI5BoE9vmJ0PLpwPfuqf2iUZ7RAS_nYTCthEMssTU-YX_xbP2YdQTCxdaURIFk9fM1P2sEdNAIPu0vJ2Fvqf5d5dxc"
-        height="200"
-        width="200"
-        >
+  <div class="game">
+    <button class="game-button" onclick="game('rock')">
+      <img class="game-image" src="https://www.pngmart.com/files/23/Cartoon-Rock-PNG.png">
+    </button>
+    <button class="game-button" onclick="game('paper')">
+      <img class="game-image" src="https://lh5.googleusercontent.com/proxy/kdGS06laDHTebUDdHyI5BoE9vmJ0PLpwPfuqf2iUZ7RAS_nYTCthEMssTU-YX_xbP2YdQTCxdaURIFk9fM1P2sEdNAIPu0vJ2Fvqf5d5dxc">
 
-      </button>
-      <button class="game-button" onclick="game('scissors')">
-        <img src="https://openclipart.org/image/800px/214212"
-        height="200"
-        width="200"
-        >
-      </button>
-    </p>
+    </button>
+    <button class="game-button" onclick="game('scissors')">
+      <img class="game-image" src="https://openclipart.org/image/800px/214212">
+    </button>
+  </div>
 
-    <p style="text-align: center; padding-top: 70px;">
-      
-      <a style="padding: 25px;">
-      <button class="score">Wins:</button> 
-      <button class="score" id="wins"></button>
-      </a>
-
-      <a style="padding: 25px;">
-      <button class="score">Draws:</button> 
-      <button class="score" id="draws"></button>
-      </a>
-
-      <a style="padding: 25px;">
-      <button class="score">Losses:</button> 
-      <button class="score" id="losses"></button>
-      </a>
-  
-    </p>
-
-    <p style="text-align: right; padding-right: 2%;">
+  <div style="margin: 3% 1% 1% 1%;">
+    <div class="score-table">
+          <button class="score">Wins:</button>
+          <button class="score" id="wins"></button>
+          <br>
+          <button class="score">Draws:</button>
+          <button class="score" id="draws"></button>
+          <br>
+          <button class="score">Losses:</button>
+          <button class="score" id="losses"></button>
+    </div>
+    <div>
       <button class="reset-score-button" onclick="resetScore()">Reset Score</button>
-    </p>
+    </div>
+  </div>
+
+
+
   <script src="index.js"></script>
 </body>
 </html>
