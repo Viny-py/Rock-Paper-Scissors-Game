@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS-GAME</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <h1 class="title">Rock - Paper - Scissors</h1>
+  
+  <div class="title">
+    <h1>Rock - Paper - Scissors</h1>
+  </div>
 
   <div class="game">
-    <button class="game-button" onclick="game('rock')">
-      <img class="game-image" src="https://www.pngmart.com/files/23/Cartoon-Rock-PNG.png">
+    <button class="gameButton" onclick="game('rock')">
+      <img class="gameImage" src="https://www.pngmart.com/files/23/Cartoon-Rock-PNG.png">
     </button>
-    <button class="game-button" onclick="game('paper')">
-      <img class="game-image" src="https://lh5.googleusercontent.com/proxy/kdGS06laDHTebUDdHyI5BoE9vmJ0PLpwPfuqf2iUZ7RAS_nYTCthEMssTU-YX_xbP2YdQTCxdaURIFk9fM1P2sEdNAIPu0vJ2Fvqf5d5dxc">
+    <button class="gameButton" onclick="game('paper')">
+      <img class="gameImage" src="https://lh5.googleusercontent.com/proxy/kdGS06laDHTebUDdHyI5BoE9vmJ0PLpwPfuqf2iUZ7RAS_nYTCthEMssTU-YX_xbP2YdQTCxdaURIFk9fM1P2sEdNAIPu0vJ2Fvqf5d5dxc">
 
     </button>
-    <button class="game-button" onclick="game('scissors')">
-      <img class="game-image" src="https://openclipart.org/image/800px/214212">
+    <button class="gameButton" onclick="game('scissors')">
+      <img class="gameImage" src="https://openclipart.org/image/800px/214212">
     </button>
   </div>
 
-  <div style="margin: 3% 1% 1% 1%;">
-    <div class="score-table">
+  <div class="items">
+    <div class="scoreTable">
           <button class="score">Wins:</button>
           <button class="score" id="wins"></button>
           <br>
@@ -35,9 +37,7 @@
           <button class="score">Losses:</button>
           <button class="score" id="losses"></button>
     </div>
-    <div>
-      <button class="reset-score-button" onclick="resetScore()">Reset Score</button>
-    </div>
+      <button class="resetScoreButton" onclick="resetScore()">Reset Score</button>
   </div>
 
 
